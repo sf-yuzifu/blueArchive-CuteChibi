@@ -10,7 +10,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
-    assetsInlineLimit: 1145141919810,
+    assetsInlineLimit: 0,
     minify: 'esbuild'
   },
   plugins: [
