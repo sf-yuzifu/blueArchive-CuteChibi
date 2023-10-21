@@ -9,6 +9,9 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
+  "resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china"
+  },
   "dependencies": {
     "axios": "^1.5.0",
     "rollup-plugin-copy": "^3.5.0",
@@ -26,6 +29,7 @@
     "eslint-plugin-vue": "^9.17.0",
     "prettier": "^3.0.3",
     "vite": "^4.4.9",
-    "vite-plugin-compression": "^0.5.1"
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-imagemin": "^0.6.1"
   }
 }
