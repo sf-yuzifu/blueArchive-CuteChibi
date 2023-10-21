@@ -48,11 +48,11 @@ const handleCancel = () => {
     @ok="handleOk"
   >
     <template #title> 版权声明</template>
-    <a-typography-title heading="6">
+    <a-typography-title :heading="6">
       所有铸币大头来源：
       <a-link href="https://www.pixiv.net/users/51776118">困倦沙拉</a-link>
     </a-typography-title>
-    <a-typography-title heading="6">
+    <a-typography-title :heading="6">
       使用的组件：
       <a-link href="https://arco.design/">Arco Design</a-link>
     </a-typography-title>

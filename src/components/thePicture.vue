@@ -1,13 +1,12 @@
 <script setup>
 import { ref } from 'vue'
 
-const files = import.meta.glob('/public/pic/*.jpg')
+const files = import.meta.glob('/src/pic/*.jpg', { as: 'url', eager: true })
 const zhubi = ref('')
 
 let toggle = false
 
-zhubi.value = Object.keys(files)[0].replace('/public', '')
-
+zhubi.value = files[Object.keys(files)[0]]
 const sleep = (timeout) => {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -22,7 +21,7 @@ const change_zhubi = async () => {
     for (;;) {
       for (const path in files) {
         await sleep(10)
-        zhubi.value = path.replace('/public', '')
+        zhubi.value = files[path]
         document.querySelector('#favicon').setAttribute('href', zhubi.value)
         if (!toggle) break
       }
