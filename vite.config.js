@@ -75,13 +75,13 @@ export default defineConfig({
         id: 'ZhubiDatou',
         icons: [
           {
-            src: 'favicon.jpg',
-            sizes: '720x720',
+            src: '/favicon512.png',
+            sizes: '512x512',
             purpose: 'any maskable'
           },
           {
-            src: 'favicon.jpg',
-            sizes: '720x720'
+            src: '/favicon144.png',
+            sizes: '144x144'
           }
         ]
       }

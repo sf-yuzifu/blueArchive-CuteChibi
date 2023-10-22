@@ -7,10 +7,12 @@ import ArcoVue from '@arco-design/web-vue'
 import ArcoVueIcon from '@arco-design/web-vue/es/icon'
 import App from './App.vue'
 import { registerSW } from 'virtual:pwa-register'
+import i18n from '@/i18n'
 
 const app = createApp(App)
 app.use(ArcoVue)
 app.use(ArcoVueIcon)
+app.use(i18n)
 
 app.mount('#app')
 
@@ -30,3 +32,5 @@ if ('serviceWorker' in navigator) {
     }
   })
 }
+
+document.querySelector('title').innerHTML = i18n.global.t('trans.title')

@@ -18,7 +18,7 @@ const handleCancel = () => {
     :show-back="false"
     :style="{ background: 'var(--color-bg-2)' }"
     subtitle=""
-    title="蔚蓝档案铸币大头自选"
+    :title="$t('trans.title')"
   >
     <template #extra>
       <a-space>
@@ -26,12 +26,13 @@ const handleCancel = () => {
           href="https://github.com/sf-yuzifu/blueArchive-ZhubiDatou"
           size="large"
           type="text"
+          aria-label="Github"
         >
           <template #icon>
             <icon-github />
           </template>
         </a-button>
-        <a-button size="large" type="text" @click="handleClick">
+        <a-button aria-label="Copyright" size="large" type="text" @click="handleClick">
           <template #icon>
             <icon-copyright size="28" />
           </template>
@@ -47,13 +48,13 @@ const handleCancel = () => {
     @cancel="handleCancel"
     @ok="handleOk"
   >
-    <template #title> 版权声明</template>
+    <template #title>{{ $t('trans.copyright') }}</template>
     <a-typography-title :heading="6">
-      所有铸币大头来源：
+      {{ $t('trans.sourceZhubi') }}：
       <a-link href="https://www.pixiv.net/users/51776118">困倦沙拉</a-link>
     </a-typography-title>
     <a-typography-title :heading="6">
-      使用的组件：
+      {{ $t('trans.usingComponent') }}：
       <a-link href="https://arco.design/">Arco Design</a-link>
     </a-typography-title>
   </a-modal>

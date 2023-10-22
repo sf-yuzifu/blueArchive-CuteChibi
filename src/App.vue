@@ -7,10 +7,10 @@ import Pic from './components/thePicture.vue'
   <Header></Header>
   <div class="container">
     <a-typography-title :style="{ textAlign: 'center' }">
-      快来选择你心仪的铸币大头吧！
+      {{ $t('trans.prompt') }}
     </a-typography-title>
     <a-typography-title :heading="6" :style="{ textAlign: 'center' }">
-      （点击铸币大头即可开始选择！）
+      （{{ $t('trans.tip') }}）
     </a-typography-title>
     <Pic></Pic>
   </div>
