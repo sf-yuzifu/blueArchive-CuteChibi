@@ -23,7 +23,7 @@ const handleCancel = () => {
     <template #extra>
       <a-space>
         <a-button
-          href="https://github.com/sf-yuzifu/blueArchive-ZhubiDatou"
+          href="https://github.com/sf-yuzifu/blueArchive-CuteChibi"
           size="large"
           type="text"
           aria-label="Github"
@@ -50,7 +50,7 @@ const handleCancel = () => {
   >
     <template #title>{{ $t('trans.copyright') }}</template>
     <a-typography-title :heading="6">
-      {{ $t('trans.sourceZhubi') }}：
+      {{ $t('trans.sourceChibi') }}：
       <a-link href="https://www.pixiv.net/users/51776118">困倦沙拉</a-link>
     </a-typography-title>
     <a-typography-title :heading="6">

@@ -1,6 +1,6 @@
 {
-  "name": "bluearchive-zhubidatou",
-  "version": "1.0.0",
+  "name": "bluearchive-cutechibi",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "vite",

@@ -1,2 +1,2 @@
-# blueArchive-ZhubiDatou
-A project to select the best picture in Blue Archive.
+# blueArchive-CuteChibi
+A project to select the Chibi in Blue Archive.

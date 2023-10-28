@@ -67,12 +67,12 @@ export default defineConfig({
         ]
       },
       manifest: {
-        name: 'BlueArchive-ZhubiDatou',
-        short_name: 'BlueArchive-ZhubiDatou',
-        description: 'A project to select the best picture in Blue Archive.',
+        name: 'BlueArchive-CuteChibi',
+        short_name: 'CuteChibi',
+        description: 'A project to select the Chibi in Blue Archive.',
         theme_color: '#128AFA',
         start_url: '/',
-        id: 'ZhubiDatou',
+        id: 'CuteChibi',
         icons: [
           {
             src: '/favicon512.png',

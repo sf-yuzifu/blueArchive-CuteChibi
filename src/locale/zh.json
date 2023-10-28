@@ -3,6 +3,9 @@
   "prompt": "快来选择你心仪的铸币大头吧！",
   "tip": "点击铸币大头即可开始选择！",
   "copyright": "版权声明",
-  "sourceZhubi": "所有铸币大头来源",
-  "usingComponent": "使用的组件"
+  "sourceChibi": "所有铸币大头来源",
+  "usingComponent": "使用的组件",
+  "warning": "注意",
+  "sw-update-tip": "当前版本有更新，请问是否立即更新。",
+  "ok": "确认"
 }

@@ -2,11 +2,11 @@
 import { ref } from 'vue'
 
 const files = import.meta.glob('/src/pic/*.jpg', { as: 'url', eager: true })
-const zhubi = ref('')
+const chibi = ref('')
 
 let toggle = false
 
-zhubi.value = files[Object.keys(files)[0]]
+chibi.value = files[Object.keys(files)[0]]
 const sleep = (timeout) => {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -15,14 +15,14 @@ const sleep = (timeout) => {
   })
 }
 
-const change_zhubi = async () => {
+const change_chibi = async () => {
   toggle = !toggle
   if (toggle) {
     for (;;) {
       for (const path in files) {
         await sleep(10)
-        zhubi.value = files[path]
-        document.querySelector('#favicon').setAttribute('href', zhubi.value)
+        chibi.value = files[path]
+        document.querySelector('#favicon').setAttribute('href', chibi.value)
         if (!toggle) break
       }
       if (!toggle) break
@@ -32,11 +32,11 @@ const change_zhubi = async () => {
 </script>
 
 <template>
-  <img id="zhubi" :src="zhubi" alt="" @click="change_zhubi" @dragstart.prevent />
+  <img id="chibi" :src="chibi" alt="" @click="change_chibi" @dragstart.prevent />
 </template>
 
 <style scoped>
-#zhubi {
+#chibi {
   max-width: 400px;
   max-height: 400px;
   width: 90%;

@@ -1,8 +1,11 @@
 {
-  "title": "Blue Archive Big Head Lottery",
-  "prompt": "Select the best big head in Blue Archive for you🥰",
-  "tip": "Click the big head to select !",
+  "title": "Blue Archive Chibi Lottery",
+  "prompt": "Select the best Chibi in Blue Archive for you🥰",
+  "tip": "Click the Chibi to select !",
   "copyright": "Copyright",
-  "sourceZhubi": "Picture from",
-  "usingComponent": "Using component"
+  "sourceChibi": "Picture from",
+  "usingComponent": "Using component",
+  "warning": "Warning",
+  "sw-update-tip": "The current version has been updated. Would you like to update now? ",
+  "ok": "OK"
 }

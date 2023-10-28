@@ -20,9 +20,9 @@ if ('serviceWorker' in navigator) {
   const updateSW = registerSW({
     onNeedRefresh() {
       Modal.confirm({
-        title: '注意',
-        content: '当前版本有更新，请问是否立即更新。',
-        okText: '确认',
+        title: i18n.global.t('trans.warning'),
+        content: i18n.global.t('trans.sw-update-tip'),
+        okText: i18n.global.t('trans.ok'),
         onOk: () => {
           updateSW(true)
         },
