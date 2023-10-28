@@ -27,10 +27,25 @@ if ('serviceWorker' in navigator) {
           updateSW(true)
         },
         onCancel: false,
-        hideCancel: false
+        hideCancel: false,
+        width: 'auto'
       })
     }
   })
 }
 
+const init = () => {
+  document.querySelector('#app').style = `height: ${document.documentElement.clientHeight}px;`
+  document.querySelector('.box').style.height =
+    document.documentElement.clientHeight -
+    document.querySelector('.arco-page-header').getBoundingClientRect().height -
+    document.querySelector('.title').getBoundingClientRect().height -
+    document.querySelector('.subtitle').getBoundingClientRect().height -
+    150 +
+    'px'
+}
+
 document.querySelector('title').innerHTML = i18n.global.t('trans.title')
+
+window.addEventListener('resize', init)
+init()

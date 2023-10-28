@@ -6,10 +6,10 @@ import Pic from './components/thePicture.vue'
 <template>
   <Header></Header>
   <div class="container">
-    <a-typography-title :style="{ textAlign: 'center' }">
+    <a-typography-title :style="{ textAlign: 'center' }" class="title">
       {{ $t('trans.prompt') }}
     </a-typography-title>
-    <a-typography-title :heading="6" :style="{ textAlign: 'center' }">
+    <a-typography-title :heading="6" :style="{ textAlign: 'center' }" class="subtitle">
       （{{ $t('trans.tip') }}）
     </a-typography-title>
     <Pic></Pic>
@@ -19,7 +19,7 @@ import Pic from './components/thePicture.vue'
 <style scoped>
 .container {
   width: 100%;
-  height: 100%;
+  margin: auto 0;
   display: flex;
   align-items: center;
   justify-content: center;

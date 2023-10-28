@@ -43,17 +43,31 @@ const handleCancel = () => {
   <a-modal
     v-model:visible="visible"
     :footer="false"
-    :modal-style="{ maxWidth: '600px', minWidth: '400px' }"
+    :modal-style="{ maxWidth: '600px' }"
     width="auto"
     @cancel="handleCancel"
     @ok="handleOk"
   >
     <template #title>{{ $t('trans.copyright') }}</template>
-    <a-typography-title :heading="6">
+    <a-typography-title
+      :heading="6"
+      :style="{
+        display: 'flex',
+        width: '100%',
+        justifyContent: 'space-between'
+      }"
+    >
       {{ $t('trans.sourceChibi') }}：
       <a-link href="https://www.pixiv.net/users/51776118">困倦沙拉</a-link>
     </a-typography-title>
-    <a-typography-title :heading="6">
+    <a-typography-title
+      :heading="6"
+      :style="{
+        display: 'flex',
+        width: '100%',
+        justifyContent: 'space-between'
+      }"
+    >
       {{ $t('trans.usingComponent') }}：
       <a-link href="https://arco.design/">Arco Design</a-link>
     </a-typography-title>

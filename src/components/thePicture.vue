@@ -32,15 +32,27 @@ const change_chibi = async () => {
 </script>
 
 <template>
-  <img id="chibi" :src="chibi" alt="" @click="change_chibi" @dragstart.prevent />
+  <div class="box">
+    <img id="chibi" :src="chibi" alt="" @click="change_chibi" @dragstart.prevent />
+  </div>
 </template>
 
 <style scoped>
 #chibi {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  user-select: none;
+}
+
+.box {
   max-width: 400px;
   max-height: 400px;
-  width: 90%;
-  user-select: none;
+  min-height: 200px;
   margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

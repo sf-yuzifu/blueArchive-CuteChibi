@@ -16,6 +16,16 @@ a {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 400px) {
+  .arco-page-header-wrapper .arco-page-header-header {
+    justify-content: center;
+  }
+}
+
+.arco-page-header-main .arco-page-header-title {
+  white-space: normal;
+  text-align: center;
 }
